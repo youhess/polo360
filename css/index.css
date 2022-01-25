@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+html{
+    font-size:62.5%;
+    background: url(/img/bd-bg.png) repeat-x ;
+}
+body{
+    width: 94rem;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 4.5rem 0;
+    padding:0 1.5rem;
+}
+ul {
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.navBar li{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px dotted #d6d6d6;
+    padding:0 1rem;
+}
+.navBar a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#666666 ;
+}
+.navBar span{
+    font-size: 1.3rem;
+    color: #b7b7b7;
+}
+.gallery_slides{
+    display: none;
+    position: relative;
+    /* border-radius: 10px;
+    box-shadow:0px 7px 15px #666666 ; */
+} 
+.active{
+    display: block;
+}
+.gallery{
+    position: relative;
+}
+.gallery_slider{
+    position: relative;
+}
+.gallery_slider::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background:url(/img/banner-bg.png) no-repeat ;
+    width: 100%;
+    height: 1.4rem;
+    top: 34.2rem;
+    left: 0;
+}
+
+.pointer{
+    cursor: pointer;
+    margin: 0 0.25rem ; 
+}
+.pointers{
+     position: absolute;
+     bottom: 0;
+    left: 0;
+}
+
+.title{
+    font-size: 2.4rem;
+    margin: 2rem ;
+    text-align: center;
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(/img/line.png) no-repeat;
+    width: 100%;
+    height: .8rem;
+    bottom: -15px;
+    
+}
+.upperCards{
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0;
+}
+.card{
+    width: 30rem;
+}
+
+.card .card_title{
+    color: #11719e;
+    font-size: 2.4rem;
+    margin: 0 10px 10px;
+}
+
+.card .card_intro{
+    color: #8c8c8c;
+    font-size:1.2rem ;
+    margin: 0 10px 10px;
+
+}
+.card_image{
+    width: 100%;
+    height: 20.2rem;
+    background:url(/img/img-bg.png)  ;
+    position: relative;
+}
+.card_pic{
+    width: 28.5rem;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+}
+.card_dis{
+    font-size: 13px;
+    line-height: 13px;
+    color: #3e3e3e;
+    margin: 0 10px 10px;
+}
+.card_button{
+    background-image: url(/img/btn1.png);
+    font-size: 13px;
+    color: #016999;
+    display: inline-block;
+    width: 163px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 20px;
+    /* cursor: pointer; */
+    text-decoration: none;
+    margin: 0 10px 10px;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.socialCard{
+    width: 30rem;
+}
+.socialCard_title{
+    font-size: 1.8rem;
+    color: #666666;
+    padding: 10px 0 ;
+    border-bottom: 1px dotted #666666;
+}
+.socialCard_detail{
+    font-size: 12px;
+    color: #666666;
+}
+.socialCard_icons{
+    padding: 0;
+}
+.socialCard .card_button{
+    margin: 0;
+}
+.socialCard_icons{
+   justify-content: space-between;
+   margin: 0 0 4rem;
+}
+.socialCard_letter{
+    font-size: 1.8rem;
+    color: #666666;
+    border-bottom: 1px dotted #666666;
+    padding-bottom: 10px;
+}
+.letter_detail{
+    font-size: 12px;
+}
+.social_input{
+    outline: none;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    border-radius: 10px;
+    text-indent: 2rem;
+    margin: 10px 0;
+}
+.socialButton{
+    background: url(/img/btn2.png) no-repeat;
+    font-size: 1.3rem;
+    color: aliceblue;
+    height: 3.2rem;
+    line-height: 3.2rem;
+}
+.send{
+    width: 30rem;
+}
+
+.area{
+    height: 13.4rem;
+    margin-bottom: 2rem;
+}
+.update{
+    width: 30rem;
+}
+.showCase{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #666666;
+    margin: 1.6rem 0;
+}
+.showCase_img{
+    height: 100%
+    
+}
+.showCase_detail{
+    padding-left: 1rem;
+}
+
+/*设置底部*/
+.footer{
+	height: 173px;
+	background: #333;
+	/*设置上边框*/
+	border-top: 10px solid #4c4c4c;
+}
+
+/*
+ * 设置底部的文字的样式
+ */
+.footer a , .footer p{
+	color: #999;
+	font: 11px Helvetica ;
+	text-decoration: none;
+}
+
+/*
+ * 设置a元素的hover
+ */
+.footer a:hover{
+	color: #cccaca;
+	text-decoration: underline;
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
+
+.footer .w{
+	padding-top:18px ;
+}
+
+.footer .copy{
+	float: right;
+	/*处理双倍边距的bug*/
+	display: inline;
+}
